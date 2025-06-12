@@ -9,7 +9,7 @@ import {
   CreditCard,
 } from 'lucide-react';
 import { productService } from './services/api';
-import { Product } from './types/product';
+import type { Product } from './types/product';
 import './App.css';
 
 interface CartItem extends Product {

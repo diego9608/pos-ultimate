@@ -134,3 +134,50 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+# === POS-ULTIMATE SPECIFIC ===
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+data/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE - VS Code workspace
+.vscode/
+*.code-workspace
+
+# Build outputs (Vite specific)
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Secrets and keys
+*.pem
+*.key
+*.crt
+secrets/
+private/
+
+# Backup files
+*.backup
+*.bak
+
+# Local config overrides
+*.local.json
+config.local.js
+
+# Test coverage
+coverage/
+
+# Documentation build
+docs/_build/
+docs/.vitepress/dist/

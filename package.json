@@ -1,0 +1,20 @@
+{
+  "name": "pos-ultimate",
+  "version": "1.0.0",
+  "description": "Zero-peso POS system monorepo",
+  "private": true,
+  "workspaces": [
+    "pos-frontend",
+    "pos-backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "npm run dev --workspace=pos-frontend",
+    "dev:backend": "npm run dev --workspace=pos-backend",
+    "build": "npm run build --workspace=pos-frontend",
+    "test": "npm test --workspaces"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
